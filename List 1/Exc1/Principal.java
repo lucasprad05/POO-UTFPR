@@ -1,15 +1,6 @@
 package exc1;
 
-import static java.lang.Math.abs;
-import static java.lang.Math.ceil;
-import static java.lang.Math.cos;
-import static java.lang.Math.exp;
-import static java.lang.Math.floor;
-import static java.lang.Math.log;
-import static java.lang.Math.max;
-import static java.lang.Math.min;
-import static java.lang.Math.pow;
-import static java.lang.Math.sqrt;
+import static java.lang.Math.*;
 import java.util.Scanner;
 
 public class Principal {
@@ -35,62 +26,62 @@ public class Principal {
         scan.nextLine();
         
         switch(opcao){
-            case 1 -> Abs();
-            case 2 -> Ceil();
-            case 3 -> Cos();
-            case 4 -> Exp();
-            case 5 -> Floor();
-            case 6 -> Log();
-            case 7 -> Max();
-            case 8 -> Min();
-            case 9 -> Pow();
-            case 10 -> Sqrt();
+            case 1 -> abs();
+            case 2 -> ceil();
+            case 3 -> cos();
+            case 4 -> exp();
+            case 5 -> floor();
+            case 6 -> log();
+            case 7 -> max();
+            case 8 -> min();
+            case 9 -> pow();
+            case 10 -> sqrt();
         }//switch
     }//main
     
-    public static void Abs(){
+    public static void abs(){
         System.out.print("Digite um numero):\n");
         Scanner scan = new Scanner(System.in);
         num1 = scan.nextFloat();
         System.out.println(num1+" em módulo é: " + abs(num1));
     }
     //--------------------------------------------------------------------------
-    public static void Ceil(){
+    public static void ceil(){
         System.out.print("Digite um numero:\n");
         Scanner scan = new Scanner(System.in);
         num1 = scan.nextFloat();
         System.out.println("O maior número inteiro ao arredondar " + num1 + " eh "+ ceil(num1));
     }
     //--------------------------------------------------------------------------
-    public static void Cos(){
+    public static void cos(){
         System.out.print("Digite um numero:\n");
         Scanner scan = new Scanner(System.in);
         num1 = scan.nextFloat();
         System.out.println("O cosseno de " + num1 + " em radianos eh " + cos(num1));
     }
     //--------------------------------------------------------------------------
-    public static void Exp(){
+    public static void exp(){
         System.out.print("digite um numero:\n");
         Scanner scan = new Scanner(System.in);
         num1 = scan.nextFloat();
         System.out.println("O numero de euler elevado a " + num1 + " eh "+ exp(num1));
     }
     //--------------------------------------------------------------------------
-    public static void Floor(){
+    public static void floor(){
         System.out.print("Digite um numero:\n");
         Scanner scan = new Scanner(System.in);
         num1 = scan.nextFloat();
         System.out.println("O menor número inteiro ao arredondar " + num1 + " eh "+ floor(num1));
     }
     //--------------------------------------------------------------------------
-    public static void Log(){
+    public static void log(){
         System.out.print("Digite um numero:\n");
         Scanner scan = new Scanner(System.in);
         num1 = scan.nextFloat();
         System.out.println("O logaritmo natural de " + num1 + " eh "+ log(num1));
     }
     //--------------------------------------------------------------------------
-    public static void Max(){
+    public static void max(){
         System.out.print("Digite o primeiro numero:\n");
         Scanner scan = new Scanner(System.in);
         num1 = scan.nextFloat();
@@ -100,7 +91,7 @@ public class Principal {
         System.out.println("O maior numero entre " + num1 +" e "+num2+ " eh "+ max(num1,num2));
     }
     //--------------------------------------------------------------------------
-    public static void Min(){
+    public static void min(){
         System.out.print("Digite o primeiro numero:\n");
         Scanner scan = new Scanner(System.in);
         num1 = scan.nextFloat();
@@ -110,7 +101,7 @@ public class Principal {
         System.out.println("O menor numero entre " + num1 +" e "+num2+ " eh "+ min(num1,num2));
     }
     //--------------------------------------------------------------------------
-    public static void Pow(){
+    public static void pow(){
         System.out.print("Digite o numero que sera a base:\n");
         Scanner scan = new Scanner(System.in);
         num1 = scan.nextFloat();
@@ -120,7 +111,7 @@ public class Principal {
         System.out.println(num1+" elevado a "+ num2 + " eh "+ pow(num1,num2));
     }
     //--------------------------------------------------------------------------
-    public static void Sqrt(){
+    public static void sqrt(){
         System.out.print("Digite um numero:\n");
         Scanner scan = new Scanner(System.in);
         num1 = scan.nextFloat();
